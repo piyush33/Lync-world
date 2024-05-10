@@ -63,6 +63,7 @@ const Display = ({data}) => {
          })
 
          setDataItems(temp);
+         setCurrentData(temp);
 
          console.log("dataItms:", dataItems);
          console.log("name:",name);

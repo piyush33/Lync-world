@@ -64,6 +64,7 @@ const Display = ({data}) => {
 
          setDataItems(temp);
          setCurrentData(temp);
+         setRenameItem("");
 
          console.log("dataItms:", dataItems);
          console.log("name:",name);
@@ -168,7 +169,7 @@ const Display = ({data}) => {
                          </div>
                           <div className={popupStates[item.name] ? "menu-container display-block": "menu-container display-none"}>
                             <div className="menuWrapper">  
-                              <input onChange={(e)=>setRenameItem(e.target.value)} className="input-field" />
+                              <input value={renameItem} onChange={(e)=>setRenameItem(e.target.value)} className="input-field" />
                               <button className="btn-rename" onClick={()=>handleRename(item.name, renameItem)}>Rename</button>
                               <div className="trashWrapper">
                               <button className="btn-secondary" onClick={()=>handleTrash(item.name)}>Move to trash</button>
@@ -190,7 +191,7 @@ const Display = ({data}) => {
                         </div>
                         <div className={popupStates[item.name] ? "menu-container display-block": "menu-container display-none"}>
                         <div className="menuWrapper">  
-                              <input onChange={(e)=>setRenameItem(e.target.value)} className="input-field" />
+                              <input value={renameItem} onChange={(e)=>setRenameItem(e.target.value)} className="input-field" />
                               <button className="btn-rename" onClick={()=>handleRename(item.name, renameItem)}>Rename</button>
                               <div className="trashWrapper">
                               <button className="btn-secondary" onClick={()=>handleTrash(item.name)}>Move to trash</button>
@@ -211,7 +212,7 @@ const Display = ({data}) => {
                         </div>
                         <div className={popupStates[item.name] ? "menu-container display-block": "menu-container display-none"}>
                            <div className="menuWrapper">  
-                              <input onChange={(e)=>setRenameItem(e.target.value)} className="input-field" />
+                              <input value={renameItem} onChange={(e)=>setRenameItem(e.target.value)} className="input-field" />
                               <button className="btn-rename" onClick={()=>handleRename(item.name, renameItem)}>Rename</button>
                               <div className="trashWrapper">
                               <button className="btn-secondary" onClick={()=>handleTrash(item.name)}>Move to trash</button>

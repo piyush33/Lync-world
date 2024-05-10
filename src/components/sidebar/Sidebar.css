@@ -1,0 +1,17 @@
+.container {
+    width: 15%;
+    height: 100vh;
+    background-color: rgb(251, 248, 230);
+}
+
+.driveWrapper {
+    display: flex;
+    align-items: center;
+    margin: 20px 0px 0px 20px;
+}
+
+.trashContainer {
+    display: flex;
+    align-items: center;
+    margin: 20px 0px 0px 20px;
+}

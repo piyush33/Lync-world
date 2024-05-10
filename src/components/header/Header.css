@@ -1,0 +1,29 @@
+.headerBox {
+    background-color: #20252c;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logoTitle {
+    margin-left: 10px;
+    color: #eee;
+    font-size: 20px;
+}
+
+.optionContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerOptions {
+    color: #5D677D;
+    padding: 10px 0px;
+    margin: 0px 15px;
+    font-size: 14px;
+    font-weight: 500;
+}
